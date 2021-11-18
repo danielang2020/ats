@@ -7,3 +7,4 @@ used to a trade system, but now aws trade system.
 - instead of pushing, could use pull mode to calculate position in RTC.
 - should use serverless to provide curd api
 - the api return exactly what error is to frontend, i18n should be done with cdn resource file.
+- decouple frontend api and backend api

@@ -7,3 +7,4 @@ used to a trade system, but now aws trade system.
 - the api return exactly what error is to frontend, i18n should be done with cdn resource file.
 - decouple frontend api and backend api
 - update config parameter notify by MQ, and then serverless update distributed cache
+- serverless provider api in the front of distributed cache

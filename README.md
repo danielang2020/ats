@@ -8,3 +8,4 @@ used to a trade system, but now aws trade system.
 - decouple frontend api and backend api
 - update config parameter notify by MQ, and then serverless update distributed cache
 - serverless provider api in the front of distributed cache
+- core logical don't need cache parameters, take associated parameters when place order

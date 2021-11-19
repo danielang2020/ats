@@ -11,3 +11,4 @@ used to a trade system, but now aws trade system.
 - core logical don't need cache parameters, take associated parameters when place order. frequently need parameter = request with parameter
 - tick messages work with container + MQ, trade notify message work with serverless + MQ
 - real time message、cpu-intensive compute service、stream handle
+- use serverless to schedule job

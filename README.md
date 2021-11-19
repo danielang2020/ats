@@ -14,3 +14,4 @@ used to a trade system, but now aws trade system.
 - use serverless to schedule job
 - expose standard openapi/asyncapi in order to generate doc and test script(postman)
 - domain-driven design, cut into some dependent modules.
+- efficient UI design tool

@@ -13,3 +13,4 @@ used to a trade system, but now aws trade system.
 - real time message、cpu-intensive compute service、data stream handle
 - use serverless to schedule job
 - expose standard openapi/asyncapi in order to generate doc and test script(postman)
+- domain-driven design, cut into some dependent modules.

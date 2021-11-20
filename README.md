@@ -15,3 +15,4 @@ used to a trade system, but now aws trade system.
 - expose standard openapi/asyncapi in order to generate doc and test script(postman)
 - domain-driven design, cut into some dependent modules.
 - efficient UI design tool
+- archive history data to another store

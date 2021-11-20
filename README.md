@@ -18,3 +18,4 @@ used to a trade system, but now aws trade system.
 - archive history data to another store
 - store market data by time series db or just simple file with s3 select
 - final architecture should privide aws resource's price and benchmark info
+- download could result in data leaking

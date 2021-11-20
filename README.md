@@ -12,7 +12,7 @@ used to a trade system, but now aws trade system.
 - tick messages work with container + MQ, trade notify message work with serverless + MQ
 - real time message、cpu-intensive compute service、data stream handle
 - use serverless to schedule job
-- expose standard openapi/asyncapi in order to generate doc and test script(postman)
+- expose standard openapi/asyncapi in order to generate doc 、 test script(postman) and client example code
 - domain-driven design, cut into some dependent modules.
 - efficient UI design tool
 - archive history data to another store

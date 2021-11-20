@@ -16,3 +16,4 @@ used to a trade system, but now aws trade system.
 - domain-driven design, cut into some dependent modules.
 - efficient UI design tool
 - archive history data to another store
+- store market data by time series db

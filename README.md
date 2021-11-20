@@ -20,3 +20,4 @@ used to a trade system, but now aws trade system.
 - final architecture should privide aws resource's price and benchmark info
 - download could result in data leaking
 - requirement and bug track management
+- writing less code can make a powerful testsuit and wonderful document.

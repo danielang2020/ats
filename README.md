@@ -25,3 +25,4 @@ used to a trade system, but now aws trade system.
 - schedule backup data info and can be restored with any version of data backup.
 - don't give root to application service.
 - auto response to common application service fail
+- config data can physically delete, user data just logically delete

@@ -23,3 +23,4 @@ used to a trade system, but now aws trade system.
 - writing less code can make a powerful testsuit and wonderful document.
 - important middleware should work with rotate password
 - schedule backup data info and can be restored with any version of data backup.
+- don't give root to application service.

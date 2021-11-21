@@ -21,3 +21,4 @@ used to a trade system, but now aws trade system.
 - download could result in data leaking
 - requirement and bug track management
 - writing less code can make a powerful testsuit and wonderful document.
+- important middleware should work with rotate password

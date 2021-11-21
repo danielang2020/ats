@@ -27,3 +27,4 @@ used to a trade system, but now aws trade system.
 - auto response to common application service fail
 - config data can physically delete, user data just logically delete
 - each administrator operations should be written down log
+- trade info sequence generate

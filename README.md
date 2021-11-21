@@ -28,4 +28,4 @@ used to a trade system, but now aws trade system.
 - config data can physically delete, user data just logically delete
 - each administrator operations should be written down log
 - trade info sequence generate(pure number or prefix + number)
-- cpu-intensive function only need numeric data to handle
+- cpu-intensive function only need integer/long data to handle

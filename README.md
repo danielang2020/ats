@@ -30,3 +30,4 @@ used to a trade system, but now aws trade system.
 - trade info sequence generate(pure number or prefix + number)
 - cpu-intensive function only need integer/long data to handle
 - core service must guarantee cluster. invalid request should be blocked by waf or gateway
+- every symbol's market data must be kept only one version.

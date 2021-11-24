@@ -32,3 +32,4 @@ used to a trade system, but now aws trade system.
 - core service must guarantee cluster. invalid request should be blocked by waf or gateway
 - every symbol's market data must be kept only one version.
 - microservice means seperating infrastructure as well, not just service code.
+- CUD should be in only one database, and then synchronize data to sharding database for R.

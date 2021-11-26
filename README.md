@@ -38,6 +38,3 @@ used to a trade system, but now aws trade system.
 - request parameters must be checked strongly
 - before production, list all points that should be monitored, every monitor has automatically handle as possible as we can.
 - every resources(cpu、memory、disk、config data、user data) should have lifespan.
-
-- core logical don't need cache parameters, take associated parameters when place order. frequently need parameter = request with parametermemory
-- core logical don't need cache parameters, take associated parameters when place order. frequently need parameter = request with parameter

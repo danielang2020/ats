@@ -36,4 +36,4 @@ used to a trade system, but now aws trade system.
 - cache service just provide specific key query with lur strategy, don't provide like query or permanent store.
 - nosql store config info
 - request parameters must be checked strongly
-- before production, list all points that should be monitored
+- before production, list all points that should be monitored, every monitor has automatically handle as possible as we can.

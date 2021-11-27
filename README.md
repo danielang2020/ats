@@ -40,3 +40,4 @@ used to a trade system, but now aws trade system.
 - every resources(cpu、memory、disk、config data、user data) should have lifespan.
 - every domain services communication by event should be tolerated reboot. After that, data will not lose.
 - checking web by google Lighthouse and pagespeed
+- every microservice communicate by service mesh(sidecar)

@@ -44,4 +44,4 @@ used to a trade system, but now aws trade system.
 - trade as a service
 - every captical flow should have trace(taizhang)
 - something like risk management or captical flow should be done after main process completes. don't effect main process.
-- every microservice should have their own metric to be monitored.
+- every microservice should have its own metric to be monitored.

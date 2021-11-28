@@ -42,3 +42,5 @@ used to a trade system, but now aws trade system.
 - checking web by google Lighthouse and pagespeed
 - every microservice communicate by service mesh(sidecar)
 - trade as a service
+- every captical flow should have trace(taizhang)
+- something like risk management or captical flow should be done after main process completes. don't effect main process.

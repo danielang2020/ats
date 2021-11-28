@@ -43,6 +43,6 @@ used to a trade system, but now aws trade system.
 - every microservice communicate by service mesh(sidecar)
 - trade as a service
 - every captical flow should have trace(taizhang)
-- something like risk management or captical flow should be done after main process completes. don't effect main process.
+- something like risk management or captical flow should be done after main process completes. don't effect main process. main process should privide service level agreement(SLA).
 - every microservice should have its own metric to be monitored. automatically reaction.
 - bussiness man, product manaagement, test team and developers keep unify view about system by documents. everything about system must be written in documents.

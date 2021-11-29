@@ -48,3 +48,4 @@ used to a trade system, but now aws trade system.
 - bussiness man, product manaagement, test team and developers keep unify view about system by documents. everything about system must be written in documents.
 - request just only contains biz parameters, other function parameters should be in header.
 - according to biz scenario, find out hot data to cache.
+- api protection(DDoS)

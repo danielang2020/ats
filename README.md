@@ -49,3 +49,4 @@ used to a trade system, but now aws trade system.
 - request just only contains biz parameters, other function parameters should be in header.
 - according to biz scenario, find out hot data to cache.
 - api protection(DDoS)
+- if use own middleware, just install on the VM, not use container.

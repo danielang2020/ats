@@ -53,3 +53,4 @@ used to a trade system, but now aws trade system.
 - cloudwatch + lambda = job
 - deploy version(story) and maven version(interface) management
 - bug/requirement work by github issue.
+- log level can be changed by pub/sub or http request.

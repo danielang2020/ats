@@ -51,3 +51,4 @@ used to a trade system, but now aws trade system.
 - api protection(DDoS)
 - if use own middleware, just install on the VM, not use container.
 - cloudwatch + lambda = job
+- deploy version(story) and maven version(interface) management

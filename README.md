@@ -50,7 +50,7 @@ used to a trade system, but now aws trade system.
 - according to biz scenario, find out hot data to cache.
 - api protection(DDoS)
 - if use own middleware, just install on the VM, not use container.
-- cloudwatch + lambda = job
+- cloudwatch + lambda + batch= job
 - deploy version(story) and maven version(interface) management
 - bug/requirement work by github issue.
 - log level can be changed by pub/sub or http request.

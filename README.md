@@ -56,3 +56,4 @@ used to a trade system, but now aws trade system.
 - log level can be changed by pub/sub or http request.
 - elasticbeanstalk can provide back end management system.
 - low code work with back end management system.
+- ios/android/web have Event Tracking.

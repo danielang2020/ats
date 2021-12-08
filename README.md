@@ -58,3 +58,4 @@ used to a trade system, but now aws trade system.
 - low code work with back end management system.
 - ios/android/web have Event Tracking.
 - every biz client(web/app) request should have a idempotent-request-id in order to retry. idempotent-request-id can be stored in cache with expiration.
+- every dependent middleware should be config by container evn, don't config by config file.

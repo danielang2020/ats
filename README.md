@@ -59,3 +59,4 @@ used to a trade system, but now aws trade system.
 - ios/android/web have Event Tracking.
 - every biz client(web/app) request should have a idempotent-request-id in order to retry. idempotent-request-id can be stored in cache with expiration.
 - every dependent middleware should be config by container evn, don't config by config file.
+- MQ will have two kinds of message, orginal message and common biz message.

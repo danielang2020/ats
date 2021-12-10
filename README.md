@@ -61,3 +61,4 @@ used to a trade system, but now aws trade system.
 - every dependent middleware should be config by container evn, don't config by config file.
 - MQ will have two kinds of message, orginal message and common biz message.
 - seperate payment/withdraw module from core biz. dependently deploy payment/withdraw service.
+- find exception or error as soon as possible. before client's awareness. by cloudwatch.

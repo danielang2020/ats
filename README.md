@@ -63,3 +63,4 @@ used to a trade system, but now aws trade system.
 - seperate payment/withdraw module from core biz. dependently deploy payment/withdraw service.
 - find exception or error as soon as possible. before client's awareness. by cloudwatch.
 - do chaos as routine
+- data backup frequently

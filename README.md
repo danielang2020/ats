@@ -68,5 +68,6 @@ used to a trade system, but now aws trade system.
 - api modification notified by email
 - api should version
 - return error contain HTTP response status codes and simple english expression detail, don't use magic number error code. 
-- backoffice should record every error request info.
+- backoffice should provide every error request info query.
 - data handle by jpa
+- backoffice by beanstalk

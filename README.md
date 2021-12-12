@@ -69,3 +69,4 @@ used to a trade system, but now aws trade system.
 - api should version
 - return error contain HTTP response status codes and simple english expression detail, don't use magic number error code. 
 - backoffice should record every error request info.
+- data handle by jpa

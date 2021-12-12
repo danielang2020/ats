@@ -66,3 +66,4 @@ used to a trade system, but now aws trade system.
 - data backup frequently
 - check middleware(by Common vulnerabilities and exposures)、web application(owasp top 10) and hardware's vulnerabilities as routine. 
 - api modification notified by email
+- api should version

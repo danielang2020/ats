@@ -69,5 +69,6 @@ used to a trade system, but now aws trade system.
 - api should version
 - return error contain HTTP response status codes and simple english expression detail, don't use magic number error code. 
 - backoffice should provide every error request info query.
-- data handle by jpa
+- using bot to bring common task into the chat interface.
 - backoffice by beanstalk
+

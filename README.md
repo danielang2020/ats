@@ -13,7 +13,7 @@ used to a trade system, but now aws trade system.
 - real time message(MQ)、cpu-intensive compute service(hazelcast)、data stream handle(hazelcast)
 - use serverless to schedule job
 - expose standard security openapi/asyncapi in order to generate doc 、 test script(postman) and client example code
-- domain-driven design, cut into some dependent modules.
+- domain-driven design, cut into some dependent modules. every module has database.
 - efficient UI design tool
 - archive history data to another store
 - store market data by time series db or just simple file with s3 select

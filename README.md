@@ -71,4 +71,7 @@ used to a trade system, but now aws trade system.
 - backoffice should provide every error request info query.
 - using bot to bring common task into the chat interface.
 - backoffice by beanstalk
+- Small releases are great. They are easy to test. They simplify code review efforts. It's much easier to confidently release and deploy small sets of changes.
+
+
 

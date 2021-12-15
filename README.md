@@ -72,7 +72,7 @@ used to a trade system, but now aws trade system.
 - using bot to bring common task into the chat interface.
 - backoffice by beanstalk
 - Small releases are great. They are easy to test. They simplify code review efforts. It's much easier to confidently release and deploy small sets of changes.
-- zero trust model security architecture
+- zero trust model security architecture(don't open 22 port(ssh))
 - real time tick only provide when user click specific symbol, other symbols just privide tick every fixed time.
 
 

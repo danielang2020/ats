@@ -75,6 +75,7 @@ used to a trade system, but now aws trade system.
 - zero trust model security architecture(don't open 22 port(ssh))
 - real time tick only provide when user click specific symbol, other symbols just privide tick every fixed time.
 - every query has export function.
-- if expression status something like that by enum, can use simple expression in english in common. don't define enum.
+- if status expressed by enum, use simple expression in english in common. don't define enum. 
+- every enum should base on english.
 
 

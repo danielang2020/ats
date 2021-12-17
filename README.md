@@ -5,6 +5,7 @@ used to a trade system, but now aws trade system.
 - should use serverless to provide query service worked with DB synchronization. By doing this, user can query info during maintenance.
 - instead of pushing, could use pull mode to calculate position in RTC.
 - the api return exactly what error is to frontend, i18n should be done with cdn resource file. enum type info should use common english expression.
+- all data info don't contain language field, expression common info. i18n should be done in front end.
 - decouple frontend api and backend api
 - update config parameter notify by MQ, and then serverless update distributed cache
 - serverless provider api in the front of distributed cache

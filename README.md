@@ -78,5 +78,6 @@ used to a trade system, but now aws trade system.
 - every query has export function.
 - if status expressed by enum, use simple expression in english in common. don't define enum. 
 - every enum should base on english.
+- low code/no code aws Amplify Studio
 
 

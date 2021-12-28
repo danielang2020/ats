@@ -79,5 +79,6 @@ used to a trade system, but now aws trade system.
 - if status expressed by enum, use simple expression in english in common. don't define enum. 
 - every enum should base on english.
 - low code/no code aws Amplify Studio
+- android/ios devices testing by browserstack or aws device farm, don't need physical device. 
 
 

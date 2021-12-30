@@ -80,5 +80,6 @@ used to a trade system, but now aws trade system.
 - every enum should base on english.
 - low code/no code aws Amplify Studio
 - android/ios devices testing by browserstack or aws device farm, don't need physical device. 
+- if real time service need config parameters, they should just have init and stop, don't allow to modify.
 
 

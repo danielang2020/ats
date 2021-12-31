@@ -81,5 +81,6 @@ used to a trade system, but now aws trade system.
 - low code/no code aws Amplify Studio
 - android/ios devices testing by browserstack or aws device farm, don't need physical device. 
 - if real time service need config parameters, they should just have init and stop, don't allow to modify.
+- if something express depends on client or server, e.g. exchange rate 、 ask or bid. need fix one side. every relative logic depends on this rule.
 
 

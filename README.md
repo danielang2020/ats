@@ -34,7 +34,7 @@ used to a trade system, but now aws trade system.
 - every symbol's market data must be kept only one version.
 - microservice means seperating infrastructure as well, not just service code.
 - CUD should be in only one database, and then synchronize data to sharding database for R.
-- cache service just provide specific key query with lur strategy, don't provide like query or permanent store.
+- cache service just provide specific key query with lur strategy, don't provide like function query or permanent store. if want to use key-value database, just choose sth like DynamoDB.
 - nosql store config info
 - request parameters must be checked strongly
 - before production, list all points that should be monitored, every monitor has automatically handle as possible as we can.
@@ -58,7 +58,7 @@ used to a trade system, but now aws trade system.
 - elasticbeanstalk can provide back end management system.
 - low code work with back end management system.
 - ios/android/web have Event Tracking.
-- every biz client(web/app) request should have a idempotent-request-id in order to retry. idempotent-request-id can be stored in cache with expiration.
+- every biz client(web/app) request should have a idempotent-request-id in order to retry. idempotent-request-id can be stored in cache with expiration. expiration work with time, for example if a request-id will be expired in a day, then yesterday request-id should be blocked no matter what it is.
 - every dependent middleware should be config by container evn, don't config by config file.
 - MQ will have two kinds of message, orginal message and common biz message.
 - seperate payment/withdraw module from core biz. dependently deploy payment/withdraw service.

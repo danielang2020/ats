@@ -85,5 +85,6 @@ used to a trade system, but now aws trade system.
 - if multiple parameters express one logic, should integrate those to group one meesage to send. don't allow unfinished setting status. event source.
 - trade core system provide asynchronous api, the result can be gotten by either acitive http query or passive websocket notify.
 - if internal request include some sensitive info, must use https.
+- connection is the key in activity system. should use graph database to group them.
 
 

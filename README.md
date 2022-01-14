@@ -86,5 +86,5 @@ used to a trade system, but now aws trade system.
 - trade core system provide asynchronous api, the result can be gotten by either acitive http query or passive websocket notify.
 - if internal request include some sensitive info, must use https.
 - connection is the key in activity system. should use graph database to group them.
-
+- realtime calculation service should not been stopped. rolling update.
 

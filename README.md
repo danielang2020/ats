@@ -88,4 +88,6 @@ used to a trade system, but now aws trade system.
 - connection is the key in activity system. should use graph database to group them.
 - realtime calculation service should not been stopped. rolling update.
 - using aws s3 serverless to store and query ohlcv csv.
+- cross position = HPC(high performance computing) = HPC follows a tightly coupled compute principle where parallel processes depend on each other.
+- isolated position = HTC(high-throughput computing) =  HTC follows a loosely coupled principle where smaller processes are run independent of each other. 
 

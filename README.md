@@ -92,4 +92,5 @@ used to be a trade system, but now is aws trade system.
 - isolated position = HTC(high-throughput computing) =  HTC follows a loosely coupled principle where smaller processes are run independent of each other. 
 - something function like RTC should be simple and native, to avoid gc, it can use object pool with big heap.
 - related configuration should be done in the same time(guiding style) or providing default value.
+- every service should be been shutdown graceful.
 

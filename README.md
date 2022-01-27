@@ -91,4 +91,5 @@ used to a trade system, but now aws trade system.
 - cross position = HPC(high performance computing) = HPC follows a tightly coupled compute principle where parallel processes depend on each other. chain computing from beginning.
 - isolated position = HTC(high-throughput computing) =  HTC follows a loosely coupled principle where smaller processes are run independent of each other. 
 - something function like RTC should be simple and native, to avoid gc, it can use object pool with big heap.
+- related configuration should be done in the same time(guiding style) or providing default value.
 

@@ -1,5 +1,5 @@
 # ats
-used to a trade system, but now aws trade system.
+used to be a trade system, but now is aws trade system.
 
 ## Thinking
 - should use serverless to provide query service worked with DB synchronization. By doing this, user can query info during maintenance.

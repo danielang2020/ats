@@ -94,3 +94,4 @@ used to be a trade system, but now is aws trade system.
 - related configuration should be done in the same time(guiding style) or providing default value.
 - every service should be been shutdown graceful.
 - each service communication with one another should by sidecar.
+- web logical app complication means that don't have standard api.

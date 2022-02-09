@@ -95,3 +95,4 @@ used to be a trade system, but now is aws trade system.
 - every service should be been shutdown graceful.
 - each service communication with one another should by sidecar.
 - web logical app complication means that don't have standard api.
+- Centralized Microservice Logging

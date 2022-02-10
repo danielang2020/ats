@@ -87,7 +87,7 @@ used to be a trade system, but now is aws trade system.
 - if internal request include some sensitive info, must use https.
 - connection is the key in activity system. should use graph database to group them.
 - realtime calculation service should not been stopped. rolling update.
-- using aws s3 serverless to store and query ohlcv csv.
+- using aws s3 serverless to store and query ohlcv csv. s3 work with cloudfront(CDN) instead of 行情站
 - cross position = HPC(high performance computing) = HPC follows a tightly coupled compute principle where parallel processes depend on each other. chain computing from beginning.
 - isolated position = HTC(high-throughput computing) =  HTC follows a loosely coupled principle where smaller processes are run independent of each other. 
 - something function like RTC should be simple and native, to avoid gc, it can use object pool with big heap.

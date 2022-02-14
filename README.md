@@ -96,3 +96,4 @@ used to be a trade system, but now is aws trade system.
 - each service communication with one another should by sidecar.
 - web logical app complication means that don't have standard api.
 - Centralized Microservice Logging. Containers offer an easy and standardized way to handle logs because you can write them to stdout and stderr. 
+- every stored data should have lifespan. e.g. data archive.

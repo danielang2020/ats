@@ -38,7 +38,7 @@ used to be a trade system, but now is aws trade system.
 - nosql store config info
 - request parameters must be checked strongly
 - before production, list all points that should be monitored, every monitor has automatically handle as possible as we can.
-- every resources(cpu、memory、disk、config data、user data) should have lifespan.
+- every resources(cpu、memory、disk、config data、user data) should have lifecycle.
 - every domain services communication by event should be tolerated reboot. After that, data will not lose.
 - checking web by google Lighthouse and pagespeed; webpagetest 
 - every microservice communicate by service mesh(sidecar)

@@ -99,3 +99,4 @@ used to be a trade system, but now is aws trade system.
 - every stored data should have lifespan. e.g. data archive.
 - move large objects out of an expensive relational database(RDS/DynamoDB) into an object store(S3). cost effectively.
 - aws rds mysql can use event_scheduler to auto delete old data. DynamoDB can use TTL to auto delete old data.
+- snapshot -> sync data -> delete old data during financial maintaining time everyday.

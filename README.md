@@ -98,3 +98,4 @@ used to be a trade system, but now is aws trade system.
 - Centralized Microservice Logging. Containers offer an easy and standardized way to handle logs because you can write them to stdout and stderr. 
 - every stored data should have lifespan. e.g. data archive.
 - move large objects out of an expensive relational database(RDS/DynamoDB) into an object store(S3). cost effectively.
+- aws rds mysql can use event_scheduler to auto delete old data. DynamoDB can use TTL to auto delete old data.

@@ -13,7 +13,7 @@ used to be a trade system, but now is aws trade system.
 - tick messages work with container + MQ, trade notify message work with serverless + MQ
 - real time message(MQ)、cpu-intensive compute service(hazelcast)、data stream handle(hazelcast)
 - use serverless to schedule job
-- expose standard security openapi/asyncapi in order to generate doc 、 test script(postman) and client example code
+- expose standard security openapi/asyncapi with version in order to generate doc 、 test script(postman) and client example code
 - domain-driven design, cut into some dependent modules. every module has database.
 - efficient UI design tool
 - archive history data to another store

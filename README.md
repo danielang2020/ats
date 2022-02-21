@@ -102,3 +102,4 @@ used to be a trade system, but now is aws trade system.
 - snapshot -> sync data -> delete old data during financial maintaining time everyday.
 - each microservice should have specific cpu and memory usage information.
 - sensitive data should be transferred with TSL/SSL in internal.
+- every microservice should integrate with Consumer Driven Contract in development.

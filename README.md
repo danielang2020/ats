@@ -101,3 +101,4 @@ used to be a trade system, but now is aws trade system.
 - aws rds mysql can use event_scheduler to auto delete old data. DynamoDB can use TTL to auto delete old data.
 - snapshot -> sync data -> delete old data during financial maintaining time everyday.
 - each microservice should have specific cpu and memory usage information.
+- sensitive data should be transferred with TSL/SSL in internal.

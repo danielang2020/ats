@@ -103,3 +103,4 @@ used to be a trade system, but now is aws trade system.
 - each microservice should have specific cpu and memory usage information.
 - sensitive data should be transferred with TSL/SSL in internal.
 - every microservice should integrate with Consumer Driven Contract in development.
+- start computing time is more important than finish computing time in RTC. put market tick and symbol position info into a HPC unit.

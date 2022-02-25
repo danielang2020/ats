@@ -99,7 +99,7 @@ used to be a trade system, but now is aws trade system.
 - every stored data should have lifespan. e.g. data archive.
 - move large objects out of an expensive relational database(RDS/DynamoDB) into an object store(S3). cost effectively.
 - aws rds mysql can use event_scheduler to auto delete old data. DynamoDB can use TTL to auto delete old data.
-- snapshot -> sync data -> delete old data during financial maintaining time everyday.
+- snapshot -> sync data -> delete old data during financial maintaining time everyday. esp. relational database.
 - each microservice should have specific cpu and memory usage information.
 - sensitive data should be transferred with TSL/SSL in internal.
 - every microservice should integrate with Consumer Driven Contract in development.

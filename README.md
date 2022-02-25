@@ -105,3 +105,4 @@ used to be a trade system, but now is aws trade system.
 - every microservice should integrate with Consumer Driven Contract in development.
 - start computing time is more important than finish computing time in RTC. put market tick and symbol position info into a HPC unit.
 - http get and then put/patch should use optimistic lock with etag.
+- if some data in some microservices need be consistent, should have data redundancy in one of data store. e.g. captial flow and total.

@@ -108,3 +108,4 @@ used to be a trade system, but now is aws trade system.
 - if some data in some microservices need be consistent, should have data redundancy in the final data store. e.g. captial flow and total with captial flow no.
 - scaling out with throttling, don't blindly scale out. scaling out by real time peak request or peak scheduled time.
 - backend service should use optimistic lock to update data. avoiding overwrite.
+- every external requests work with timeout setting(connect timeout/read timeout).

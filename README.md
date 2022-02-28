@@ -111,3 +111,4 @@ used to be a trade system, but now is aws trade system.
 - backend service should use optimistic lock to update data. avoiding overwrite.
 - every external requests work with timeout setting(connect timeout/read timeout).
 - strong consistency in cats is unnecessary. eventual consistency is enough. substract user balance and then open a new position, close a position and then add user balance. deposit money and then add user balance, substrct balance and then withdraw money. use command message to notify clearing service.
+- every microservice communicates with each other by protobuf.

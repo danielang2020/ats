@@ -114,3 +114,4 @@ used to be a trade system, but now is aws trade system.
 - every microservice communicates with each other by protobuf.
 - client ui have some place to store error/exception info. in order to give dev to solve the problem.
 - If use retry, should issue retry in source, not middle service.
+- wanfa(future/spot/margin) is about money management, trade mode is about logic of trade.

@@ -115,3 +115,4 @@ used to be a trade system, but now is aws trade system.
 - client ui have some place to store error/exception info. in order to give dev to solve the problem.
 - If use retry, should issue retry in source, not middle service.
 - wanfa(future/spot/margin) is about money management, trade mode is about logic of trade.
+- between two busy servie should have a high available middleware, don't let one service to push another one directly.

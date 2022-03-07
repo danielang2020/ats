@@ -118,3 +118,4 @@ used to be a trade system, but now is aws trade system.
 - between two busy servie should have a high available middleware, don't let one service to push another one directly.
 - order/deal use rds to store, position use dynamodb to store.
 - eventually consistence can't work with action that depends on condition query.
+- every biz data that depends on config should have whole lifespan. When to create, when not to create. 

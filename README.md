@@ -117,3 +117,4 @@ used to be a trade system, but now is aws trade system.
 - wanfa(future/spot/margin) is about money management, trade mode is about logic of trade.
 - between two busy servie should have a high available middleware, don't let one service to push another one directly.
 - order/deal use rds to store, position use dynamodb to store.
+- eventually consistence can't work with action that depends on condition query.

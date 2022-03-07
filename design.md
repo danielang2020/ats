@@ -7,4 +7,4 @@
 7. data flow, from hottest to coolest.
 8. explore/expand/extract
 9. domain driven design/team management
-10. how to transfer monolitic to mircoservice quickly by aws.
+10. how to transfer domain monolith to mircoservice quickly by aws.

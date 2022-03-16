@@ -120,3 +120,4 @@ used to be a trade system, but now is aws trade system.
 - eventually consistence can't work with action that depends on condition query.
 - every biz data that depends on config should have whole lifespan. When scenario with config to create, when not to create. 
 - avoid designing upfront and change requirement frequently.
+- continous refactoring with automation test in Agile.

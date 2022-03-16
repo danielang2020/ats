@@ -122,3 +122,4 @@ used to be a trade system, but now is aws trade system.
 - avoid designing upfront and change requirement frequently.
 - continous refactoring with automation test in Agile.
 - think out everything -> agile development -> manually testing
+- upfront architecture limits development speed.

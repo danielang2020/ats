@@ -123,3 +123,4 @@ used to be a trade system, but now is aws trade system.
 - continous refactoring with automation test in Agile.
 - think out everything -> agile development -> manually testing
 - upfront architecture limits development speed.
+- mobile and desktop should have different application service to provide api. in order to test respectively.

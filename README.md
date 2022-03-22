@@ -116,7 +116,7 @@ used to be a trade system, but now is aws trade system.
 - If use retry, should issue retry in source, not middle service.
 - wanfa(future/spot/margin) is about money management, trade mode is about logic of trade.
 - between two busy servie should have a high available middleware, don't let one service to push another one directly.
-- order/deal use rds to store, position use dynamodb to store.
+- order/deal/position should be query by id or account with dynamodb. user info/system config work with rds.
 - eventually consistence can't work with action that depends on condition query.
 - every biz data that depends on config should have whole lifespan. When scenario with config to create, when not to create. 
 - avoid designing upfront and change requirement frequently.

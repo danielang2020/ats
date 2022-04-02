@@ -124,4 +124,4 @@ used to be a trade system, but now is aws trade system.
 - think out everything -> agile development -> manually testing
 - upfront architecture limits development speed.
 - mobile and desktop should have different application service to provide api. in order to test respectively.
-- market data should have fixed rate to give data to other consumer.
+- market data should have fixed rate to give data to other consumer. external data source should be limited or it can push lots of data to kernel.

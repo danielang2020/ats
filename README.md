@@ -126,3 +126,4 @@ used to be a trade system, but now is aws trade system.
 - mobile and desktop should have different application service to provide api. in order to test respectively.
 - market data should have fixed rate to give data to other consumer. external data source should be limited or it can push lots of data to kernel.
 - In market data hpc service, should shutdown log in production and privide realtime log in stage env. In trade hpc service, should shutdown log and privde the whole answer with expression/processing info to downstream.
+- While CodeQL detects security issues in your own code, Dependabot detects vulnerabilities that originate from your project’s dependencies.

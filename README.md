@@ -127,16 +127,25 @@ used to be a trade system, but now is aws trade system.
 - market data should have fixed rate to give data to other consumer. external data source should be limited or it can push lots of data to kernel.
 - In market data hpc service, should shutdown log in production and privide realtime log in stage env. In trade hpc service, should shutdown log and privde the whole answer with expression/processing info to downstream.
 - While CodeQL detects security issues in your own code, Dependabot detects vulnerabilities that originate from your project’s dependencies.
-- cryptocurrency decimal problem. 
->>  long max: 9,223,372,036,854,775,807                19 decimal places(100million/10 decimal places)  
->>  btc:        20,999,999.99999999                     8 decimal places  
->>  usd:40,000,000,000,000.00                           2 decimal places
->>  eth:        17,999,999.999999999999999999/per year 18 decimal places
->>  future-usdt: coin/usdt
->>  future-coin: coin/btc(usd)
->>  notional value: limit quantity
->>  max limit: limit price value
->>1. avoid multiplication(price * quantity)
->>2. if there is a big total price order, can use it divided by price to get quantity
->>3. have limit
->>4. cryptocurrency address support 18 decimal places, but arithematic operation only support 10 decimal places
+- cryptocurrency decimal problem.   
+>>  long max: 9,223,372,036,854,775,807                19 decimal places(100million/10 decimal places)    
+>>  btc:        20,999,999.99999999                     8 decimal places    
+>>  usd:40,000,000,000,000.00                           2 decimal places  
+>>  eth:        17,999,999.999999999999999999/per year 18 decimal places  
+>>  future-usdt: coin/usdt  
+>>  future-coin: coin/btc(usd)  
+>>  notional value: limit quantity  
+>>  max limit: limit price value  
+>>1. avoid multiplication(price * quantity)  
+>>2. if there is a big total price order, can use it divided by price to get quantity  
+>>3. have limit  
+>>4. cryptocurrency address support 18 decimal places, but arithematic operation only support 10 decimal places  
+>>> e.g.  
+>>> notinoal value:10.00000000  
+>>> my asset: 0.000000000000000001  
+>>> eth/usdt last price: 1/1,774.04  
+>>> multipy: 0.000000000000000001 * 1,774.04 = 0.000000000177404 (15 decimal places)  
+>>> divide: 10 / 1774.04 = 0.005636851480237199(15 decimal places)  
+>>> min quantity limit: 0.0001  
+>>> only check if my asset is great than 0.0001  
+

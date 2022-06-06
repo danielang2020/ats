@@ -138,7 +138,7 @@ used to be a trade system, but now is aws trade system.
 >>  max limit: limit price value  
 >>1. avoid multiplication(price * quantity)  
 >>2. if there is a big total price order, can use it divided by price to get quantity  
->>3. have limit  
+>>3. have min/max limit, min control asset decimal places, max control price.
 >>4. cryptocurrency address support 18 decimal places, but arithematic operation only support 10 decimal places  
 >>> e.g.  
 >>> notinoal value:10.00000000  

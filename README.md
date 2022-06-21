@@ -148,4 +148,5 @@ used to be a trade system, but now is aws trade system.
 >>> divide: 10 / 1774.04 = 0.005636851480237199(15 decimal places)  
 >>> min quantity limit: 0.0001  
 >>> only check if my asset is great than 0.0001  
+- captical flow = lock -> transfer -> unlock
 

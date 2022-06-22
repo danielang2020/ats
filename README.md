@@ -149,4 +149,5 @@ used to be a trade system, but now is aws trade system.
 >>> min quantity limit: 0.0001  
 >>> only check if my asset is great than 0.0001  
 - captical flow = lock -> transfer -> unlock
+- if captial flow has multiple steps, should be atomic. e.g. 5 steps, each flow info should have step number(1/2/3/4/5) and total steps number(5). Next a group of steps come in, first validate that the total steps number is equals to last step number.
 

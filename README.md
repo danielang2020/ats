@@ -154,4 +154,4 @@ used to be a trade system, but now is aws trade system.
 - every microservice communicates with each other by domain other than private ip. (Route 53 hosted zone)
 - whitelabels focus on symbol and customers focus on account, so should have their own nosql table, customer table's primary key is account and sort key is symbol, whitelabel's primary key is symbol and sort key is account. Whitelabel's table is primary table, customer's table is secondary table. They are synchronous by DynamoDB stream. 
 - Basically, each customer's notification is termination about one business flow. It can be used by serverless to implement.
-
+- Trade system should have three database schema at least. the first is for customer, the second is for whitelabel computation and the last one is for whitelable analysis query.

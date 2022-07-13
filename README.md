@@ -45,7 +45,7 @@ used to be a trade system, but now is aws trade system.
 - trade as a service
 - every captical flow should have trace(taizhang)
 - something like risk management or captical flow should be done after main process completes. don't effect main process. main process should privide service level agreement(SLA).
-- every microservice should have its own metric to be monitored. automatically reaction.
+- every microservice should have its own metric to be monitored. automatically reaction. There are two types of metrics. one is system-level metric, it can be get by CloudWatch, the other one is biz-level metric, it should be implemented by code and putting custom metric data to CloudWatch.
 - bussiness man, product manaagement, test team and developers keep unify view about system by documents. everything about system must be written in documents.
 - request just only contains biz parameters, other function parameters should be in header.
 - according to biz scenario, find out hot data to cache.

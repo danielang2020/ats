@@ -156,3 +156,4 @@ used to be a trade system, but now is aws trade system.
 - Basically, each customer's notification is termination about one business flow. It can be used by serverless to implement.
 - Trade system should have three database schema at least. the first is for customer, the second is for whitelabel computation and the last one is for whitelable analysis query.
 - every configuration must use domain instead of ip.
+- every production env exception should create an issue automatically by github api.

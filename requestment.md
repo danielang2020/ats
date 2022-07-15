@@ -5,3 +5,6 @@
 5. After a meeting about FAQ and design implement, product managers, developers and testers reach an agreement finally.
 6. 记忆大搜索，大家来找茬，技术实现
 7. the best communication is no communication and by tools asynchronously.
+8. 产品、开发、测试三方对于需求的理解没有在一个文档中体现。
+9. 列举的事例都是按照最理想或者普通的场景来处理，没有列举最复杂的场景。
+

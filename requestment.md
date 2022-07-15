@@ -7,4 +7,5 @@
 7. the best communication is no communication and by tools asynchronously.
 8. 产品、开发、测试三方对于需求的理解没有在一个文档中体现。
 9. 列举的事例都是按照最理想或者普通的场景来处理，没有列举最复杂的场景。
+10. 简单的业务流程，无需经过开发讲解，大家同步开会主要是针对复杂流程及新的名词解释同步。
 

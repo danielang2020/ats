@@ -157,4 +157,4 @@ used to be a trade system, but now is aws trade system.
 - Trade system should have three database schema at least. the first is for customer, the second is for whitelabel computation and the last one is for whitelable analysis query.
 - every configuration must use domain instead of ip.
 - every production env exception should create an issue automatically by github api.
-- backend service should be exposed by API in case that there is an error occur which can be fixed automatically by requesting api.
+- backend service should be exposed by API in case that there is an error occur which can be fixed automatically or chatops by requesting api.

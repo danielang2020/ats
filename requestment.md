@@ -3,7 +3,7 @@
 3. testcase will convert to postman scripts. frontend biz develop based on postman scripts.
 4. give them to developers and testers, they could read them asynchronously and write down some questions.
 5. After a meeting about FAQ and design implement, product managers, developers and testers reach an agreement finally.
-6. 记忆大搜索，大家来找茬，技术实现
+6. 现场记忆大搜索，现场大家来找茬，现场技术实现
 7. the best communication is no communication and by tools asynchronously.
 8. 产品、开发、测试三方对于需求的理解没有在一个文档中体现。
 9. 复杂需求和简单需求的处理流程一样，都是按步逐一讲解，举简单流程例子

@@ -158,3 +158,4 @@ used to be a trade system, but now is aws trade system.
 - every configuration must use domain instead of ip.
 - every production env exception should create an issue automatically by github api.
 - backend service should be exposed by API in case that there is an error occur which can be fixed automatically or chatops by requesting api.
+- history kline data can be implemented and stored by CDN 

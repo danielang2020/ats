@@ -158,4 +158,5 @@ used to be a trade system, but now is aws trade system.
 - every configuration must use domain instead of ip.
 - every production env exception should create an issue automatically by github api.
 - backend service should be exposed by API in case that there is an error occur which can be fixed automatically or chatops by requesting api.
-- history kline data can be implemented and stored by CDN 
+- history kline data can be implemented and stored by CDN .
+- market data info shares with all whitelabel, but HPC service could be independent according to each customer number. Some whitelabel has a lots of customers, we should provide high performance configuration ec2, some whitelabel has few customers, we should provide lower configuration ec2.

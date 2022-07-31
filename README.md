@@ -161,3 +161,4 @@ used to be a trade system, but now is aws trade system.
 - history kline data can be implemented and stored by CDN .
 - market data info shares with all whitelabel, but HPC service could be independent according to each customer number. Some whitelabel has a lots of customers, we should provide high performance configuration ec2, some whitelabel has few customers, we should provide lower configuration ec2.
 - historic kline data are provided by REST api and use json array(without key) to show.
+- each service should implement health check and SIGTERM(15) handler.

@@ -164,3 +164,4 @@ used to be a trade system, but now is aws trade system.
 - each service should implement health check and SIGTERM(15) handler.
 - sms and email should not include trade system. trade system only provide app message. the other notification receive mq message to handle.
 - between frontend and rest api, should have a proxy layer that implements some computation and aggregation data for frontend to prepare data to show.
+- a request from frontend should be validated by json schema.

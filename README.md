@@ -166,3 +166,4 @@ used to be a trade system, but now is aws trade system.
 - between frontend and rest api, should have a proxy layer that implements some computation and aggregation data for frontend to prepare data to show.
 - a request from frontend should be validated by json schema.
 - market data need have two categories, realtime is for HPC, period is for frontend show.
+- configuration file can be stored in S3. service get it every 10 seconds.

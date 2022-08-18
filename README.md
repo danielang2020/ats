@@ -169,3 +169,4 @@ used to be a trade system, but now is aws trade system.
 - configuration file can be stored in S3. service get it every 10 seconds.
 - internal message pushing can be implemented by periodic request instead of websocket.
 - deal info should have a connection with tick in database.
+- microservice communication flow should be constant in one way. async(MQ) or sync(RPC).

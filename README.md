@@ -167,3 +167,4 @@ used to be a trade system, but now is aws trade system.
 - a request from frontend should be validated by json schema.
 - market data need have two categories, realtime is for HPC, period is for frontend show.
 - configuration file can be stored in S3. service get it every 10 seconds.
+- internal message pushing can be implemented by periodic request instead of websocket.

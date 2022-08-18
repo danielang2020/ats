@@ -168,3 +168,4 @@ used to be a trade system, but now is aws trade system.
 - market data need have two categories, realtime is for HPC, period is for frontend show.
 - configuration file can be stored in S3. service get it every 10 seconds.
 - internal message pushing can be implemented by periodic request instead of websocket.
+- deal info should have a connection with tick in database.

@@ -170,3 +170,4 @@ used to be a trade system, but now is aws trade system.
 - internal message pushing can be implemented by periodic request instead of websocket.
 - deal info should have a connection with tick in database.
 - microservice communication flow should be constant in one way. async(MQ) or sync(RPC). Don't let one biz has two kinds of communication methods.
+- DDD -> biz domain -> microservice -> dev/test/upgrade effectively

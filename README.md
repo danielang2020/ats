@@ -173,3 +173,4 @@ used to be a trade system, but now is aws trade system.
 - DDD -> biz domain -> microservice -> dev/test/upgrade effectively
 - market tick config should have timestamp version and latest version respectively. kline only store original tick. Working with different time version config in order to get different time's tick. One tick data, mulitple config data.
 - When a user sign in app to see market data, kline will show week instead of day.
+- frontend web app can be deployed in S3 web host.

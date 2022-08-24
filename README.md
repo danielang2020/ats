@@ -174,3 +174,4 @@ used to be a trade system, but now is aws trade system.
 - market tick config should have timestamp version and latest version respectively. kline only store original tick. Working with different time version config in order to get different time's tick. One tick data, mulitple config data.
 - When a user sign in app to see market data, kline will show week instead of day.
 - frontend web app can be deployed in S3 web host.
+- something like market open time or settlement time, they should not provide admin function, just provide a json file in s3, because they don't update frequently.

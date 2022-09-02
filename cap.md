@@ -13,7 +13,6 @@
 13、在目前不修改数据存储的情况下，主库要缩小可提供查询的条件，例如account只能根据customer+tradeType或accountId，position只能根据account + symbol或positionId，复杂查询要么去replica或者data warehouse  
 14、cap属于被动服务，以事件驱动为主，除去本身的相关参数需要关注，其他参数应都有玩法服务判断校验或通过接口传给cap  
 15、账户清零和公司行动，是单独的通过正常的划账任务去干预。不是处理正常账务时，顺便自动处理。cap要保证正确干净的账务加减逻辑。
-16、mq消费维度先按照公司+固定数值（客户组）+玩法，后续如果用户量大，可以调整为公司 + 指定客户组 + 玩法消费。a dead letter queue per company.
 
 account  
 1、存在跨两个白标公司账务处理？  
@@ -41,5 +40,8 @@ ddd cut -> stateless -> serverless
 
 SQS    
 1、FIFO queues support up to 300 messages per second (300 send, receive, or delete operations per second). When you batch 10 messages per operation (maximum), FIFO queues can support up to 3,000 messages per second. If you require higher throughput, you can enable high throughput mode for FIFO on the Amazon SQS console, which will support up to 30,000 messages per second with batching, or up to 3,000 messages per second without batching.  
-2、Amazon SQS has a deduplication interval of 5 minutes.   
-3、
+2、If a message with a particular message deduplication ID is sent successfully, any messages sent with the same message deduplication ID are accepted successfully but aren't delivered during the 5-minute deduplication interval.  
+3、There is no quota to the number of message groups within a FIFO queue.  
+4、You can't request to receive messages with a specific message group ID.  
+5、It is possible to receive up to 10 messages in a single call using the MaxNumberOfMessages request parameter of the ReceiveMessage action.   
+

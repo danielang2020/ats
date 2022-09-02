@@ -37,3 +37,9 @@ position提供仓位更新服务
 
   
 ddd cut -> stateless -> serverless
+
+
+SQS
+1、FIFO queues support up to 300 messages per second (300 send, receive, or delete operations per second). When you batch 10 messages per operation (maximum), FIFO queues can support up to 3,000 messages per second. If you require higher throughput, you can enable high throughput mode for FIFO on the Amazon SQS console, which will support up to 30,000 messages per second with batching, or up to 3,000 messages per second without batching.  
+2、Amazon SQS has a deduplication interval of 5 minutes.   
+3、

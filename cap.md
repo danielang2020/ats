@@ -31,7 +31,8 @@ account
    a 余额充足情况，可以交易，不存在负债   
    b 余额不充足情况，是否可借款做交易，存在负债   
    c 入账时，永远都是先处理负债   
-8、爆仓计算期间取款操作，有保证金，另外附加取款延迟30分钟到账（处理取款时，正在计算爆仓）。
+8、爆仓计算期间取款操作，有保证金，另外附加取款延迟30分钟到账（处理取款时，正在计算爆仓）。   
+9、当处理一个账户账务时，发生异常，直接修改账户状态，且返回失败，clearing消费者将此消息转移到DLQ中，后续如果继续有此账户的账务处理，account判断账户状态为异常后，继续返回失败，转DLQ。待后续正常后，重新进行消费。   
 
 
 clearing主要是管理account各个科目的资金变动及仓位调整  
@@ -49,6 +50,18 @@ SQS
 3、There is no quota to the number of message groups within a FIFO queue.  
 4、You can't request to receive messages with a specific message group ID.  
 5、It is possible to receive up to 10 messages in a single call using the MaxNumberOfMessages request parameter of the ReceiveMessage action.   
-6、The Amazon SQS Buffered Asynchronous Client doesn't currently support FIFO queues.   
-
+6、The Amazon SQS Buffered Asynchronous Client doesn't currently support FIFO queues.    
+7、it is a best practice to always set the retention period of a dead-letter queue to be longer than the retention period of the original queue.    
+8、if you view a message in the console the number of times specified in the corresponding queue's redrive policy, the message is moved to the corresponding queue's dead-letter queue.   
+    Increase the Maximum Receives setting for the corresponding queue's redrive policy.  
+    Avoid viewing the corresponding queue's messages in the console.   
+9、A message is considered to be stored after it is sent to a queue by a producer, but not yet received from the queue by a consumer (that is, between states 1 and 2). There is no quota to the number of stored messages. A message is considered to be in flight after it is received from a queue by a consumer, but not yet deleted from the queue (that is, between states 2 and 3). There is a quota to the number of in flight messages.   
+10、For FIFO queues, there can be a maximum of 20,000 in flight messages (received from a queue by a consumer, but not yet deleted from the queue).   
+11、If you don't know how long it takes to process a message, create a heartbeat for your consumer process: Specify the initial visibility timeout (for example, 2 minutes) and then—as long as your consumer still works on the message—keep extending the visibility timeout by 2 minutes every minute.    
+12、the new timeout period applies only to the particular receipt of the message. ChangeMessageVisibility doesn't affect the timeout of later receipts of the message or later queues.    
+13、For FIFO queues, the per-queue delay setting is retroactive—changing the setting affects the delay of messages already in the queue.    
+14、FIFO queues don't support timers on individual messages.   
+15、During a long-lasting network outage that causes connectivity issues between your SDK and Amazon SQS, it's a best practice to provide the receive request attempt ID and to retry with the same receive request attempt ID if the SDK operation fails.   
+16、don't recommend setting the number of maximum receives to 1 for a dead-letter queue.  
+17、The Amazon SQS Buffered Asynchronous Client doesn't currently support FIFO queues.   
 

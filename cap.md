@@ -64,4 +64,6 @@ SQS
 15、During a long-lasting network outage that causes connectivity issues between your SDK and Amazon SQS, it's a best practice to provide the receive request attempt ID and to retry with the same receive request attempt ID if the SDK operation fails.   
 16、don't recommend setting the number of maximum receives to 1 for a dead-letter queue.  
 17、The Amazon SQS Buffered Asynchronous Client doesn't currently support FIFO queues.   
+18、When messages that belong to a particular message group ID are invisible, no other consumer can process messages with the same message group ID.  
+19、FIFO Exactly-Once Processing
 

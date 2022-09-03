@@ -49,4 +49,6 @@ SQS
 3、There is no quota to the number of message groups within a FIFO queue.  
 4、You can't request to receive messages with a specific message group ID.  
 5、It is possible to receive up to 10 messages in a single call using the MaxNumberOfMessages request parameter of the ReceiveMessage action.   
+6、The Amazon SQS Buffered Asynchronous Client doesn't currently support FIFO queues.   
+
 

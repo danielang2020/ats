@@ -13,7 +13,10 @@
 13、在目前不修改数据存储的情况下，主库要缩小可提供查询的条件，例如account只能根据customer+tradeType或accountId，position只能根据account + symbol或positionId，复杂查询要么去replica或者data warehouse  
 14、cap属于被动服务，以事件驱动为主，除去本身的相关参数需要关注，其他参数应都有玩法服务判断校验或通过接口传给cap  
 15、账户清零和公司行动，是单独的通过正常的划账任务去干预。不是处理正常账务时，顺便自动处理。cap要保证正确干净的账务加减逻辑。
-16、按玩法分别创建queue，每个queue根据公司编号+账户编号创建message group id进行定序。  
+16、按玩法分别创建queue，每个queue根据公司编号+账户编号创建message group id进行定序。 后续整个系统的停机策略按平台停、按公司停、按公司指定账户组停。   
+    玩法queue + （公司编号 + 账户编号）
+    公司玩法queue + （账户编号）
+    公司玩法客户组queue + （账户编号）
 17、使用ecs提供的Rolling update更新服务，保证不停机。  
 
 account  

@@ -66,5 +66,6 @@ SQS
 16、don't recommend setting the number of maximum receives to 1 for a dead-letter queue.  
 17、The Amazon SQS Buffered Asynchronous Client doesn't currently support FIFO queues.   
 18、When messages that belong to a particular message group ID are invisible, no other consumer can process messages with the same message group ID.  
-19、FIFO Exactly-Once Processing
+19、FIFO Exactly-Once Processing。  
+20、 before you process each message, double check to be sure its VisibilityTimeout hasn’t expired.    
 

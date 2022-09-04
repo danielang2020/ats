@@ -20,7 +20,8 @@
 17、使用ecs提供的Rolling update更新服务，保证不停机。   
 18、计算所需热数据保存在主库，用户或者营运查询数据同步到只读库（可以单独创建不同主库的索引），用户或者营运汇总数据查询同步到mongodb。  
 19、cloudwatch监控SQS实现自动ecs扩容服务。   
-20、所有cap服务，需要实现shutdownhook。    
+20、所有cap服务，需要实现shutdownhook。   
+21、使用saga pattern处理cap之间的事务。    
 
 account  
 1、存在跨两个白标公司账务处理？  

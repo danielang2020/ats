@@ -16,9 +16,10 @@
 16、按玩法分别创建queue，每个queue根据公司编号+账户编号创建message group id进行定序。 后续整个系统的停机策略按平台停、按公司停、按公司指定账户组停。   
     玩法queue + （公司编号 + 账户编号）   
     公司玩法queue + （账户编号）   
-    公司玩法客户组queue + （账户编号）   
-17、使用ecs提供的Rolling update更新服务，保证不停机。
-18、计算所需热数据保存在主库，用户或者营运查询数据同步到只读库（可以单独创建不同主库的索引），用户或者营运汇总数据查询同步到mongodb。
+    公司玩法客户组queue + （账户编号）     
+17、使用ecs提供的Rolling update更新服务，保证不停机。   
+18、计算所需热数据保存在主库，用户或者营运查询数据同步到只读库（可以单独创建不同主库的索引），用户或者营运汇总数据查询同步到mongodb。  
+19、cloudwatch监控SQS实现自动ecs扩容服务。   
 
 account  
 1、存在跨两个白标公司账务处理？  
@@ -68,4 +69,6 @@ SQS
 18、When messages that belong to a particular message group ID are invisible, no other consumer can process messages with the same message group ID.  
 19、FIFO Exactly-Once Processing。  
 20、 before you process each message, double check to be sure its VisibilityTimeout hasn’t expired.    
+21、The result of sending each message is reported individually in the response. Because the batch request can result in a combination of successful and unsuccessful actions, you should check for batch errors even when the call returns an HTTP status code of 200.   
+22、
 

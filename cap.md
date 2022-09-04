@@ -70,5 +70,5 @@ SQS
 19、FIFO Exactly-Once Processing。  
 20、 before you process each message, double check to be sure its VisibilityTimeout hasn’t expired.    
 21、The result of sending each message is reported individually in the response. Because the batch request can result in a combination of successful and unsuccessful actions, you should check for batch errors even when the call returns an HTTP status code of 200.   
-22、
+22、 you should make sure that your queue isn't publicly accessible (accessible by everyone in the world or by any authenticated AWS user).  
 

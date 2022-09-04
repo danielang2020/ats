@@ -13,13 +13,14 @@
 13、在目前不修改数据存储的情况下，主库要缩小可提供查询的条件，例如account只能根据customer+tradeType或accountId，position只能根据account + symbol或positionId，复杂查询要么去replica或者data warehouse  
 14、cap属于被动服务，以事件驱动为主，除去本身的相关参数需要关注，其他参数应都有玩法服务判断校验或通过接口传给cap  
 15、账户清零和公司行动，是单独的通过正常的划账任务去干预。不是处理正常账务时，顺便自动处理。cap要保证正确干净的账务加减逻辑。
-16、按玩法分别创建queue，每个queue根据公司编号+账户编号创建message group id进行定序。 后续整个系统的停机策略按平台停、按公司停、按公司指定账户组停。   
-    玩法queue + （公司编号 + 账户编号）   
-    公司玩法queue + （账户编号）   
-    公司玩法客户组queue + （账户编号）     
+16、按玩法分别创建queue，每个queue根据公司编号+账户编号创建message group id进行定序。 后续整个系统的停机策略按平台停、按公司停、按公司指定账户组停。每次producer和consumer启动时，获取QueueList，按照公司 + 玩法 + 客户组 + 账户编号四级维度依次匹配获取对应的发送或者接收queue。获取对应的Queue名称规则后，即可确认message group id规则。如果大维度的Queue满足不了性能时，需要暂停服务，重新创建小维度Queue，然后启动服务。         
+    Queue名称：         公司_玩法_客户组 -> 公司_玩法      -> 公司   
+    message group id：  账户编号       -> 客户组_账户编号 -> 玩法_客户组_账户编号  
+    
 17、使用ecs提供的Rolling update更新服务，保证不停机。   
 18、计算所需热数据保存在主库，用户或者营运查询数据同步到只读库（可以单独创建不同主库的索引），用户或者营运汇总数据查询同步到mongodb。  
 19、cloudwatch监控SQS实现自动ecs扩容服务。   
+20、所有cap服务，需要实现shutdownhook。    
 
 account  
 1、存在跨两个白标公司账务处理？  
@@ -70,5 +71,6 @@ SQS
 19、FIFO Exactly-Once Processing。  
 20、 before you process each message, double check to be sure its VisibilityTimeout hasn’t expired.    
 21、The result of sending each message is reported individually in the response. Because the batch request can result in a combination of successful and unsuccessful actions, you should check for batch errors even when the call returns an HTTP status code of 200.   
-22、 you should make sure that your queue isn't publicly accessible (accessible by everyone in the world or by any authenticated AWS user).  
+22、 you should make sure that your queue isn't publicly accessible (accessible by everyone in the world or by any authenticated AWS user).   
+23、1,000 queues per ListQueues request.   
 

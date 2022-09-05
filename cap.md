@@ -54,7 +54,7 @@ position提供仓位更新服务
 
 
   
-ddd cut -> stateless -> serverless
+ddd cut -> stateless（autoscaling） -> serverless（don't care）
 
 
 SQS    

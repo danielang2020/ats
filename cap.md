@@ -18,7 +18,7 @@
 18、计算所需热数据保存在主库，用户或者营运查询数据同步到只读库（可以单独创建不同主库的索引），用户或者营运汇总数据查询同步到mongodb。  
 19、cloudwatch监控SQS queue中的flight-in message超过阈值时，实现自动ecs扩容服务。   
 20、所有cap服务，需要实现shutdownhook。如果存在长时间保存的数据，需存储在集中式缓存中，便于shutdownhook后停止服务，重启后继续执行。   
-21、使用saga pattern(Choreography)处理cap之间的事务，使用补偿代替回滚。需要创建四类Queue，Clearing、Account、Position、单独存在夸公司产品交易的（基金） Queue，解耦Clearing、Account和Position逻辑。使用saga pattern就无需DLQ保存失败请求。无论请求成功或者失败都可以继续处理下一个消息。cap服务处理流程都是消费消息 -> 单一逻辑处理 -> 发送消息，服务流程简单健壮，也便于快速消费消息，不堵塞。          
+21、使用saga pattern(Choreography)处理cap之间的事务，使用补偿代替回滚。需要创建五类Queue，Clearing、Account、Position、单独存在夸公司产品交易的（基金）、处理结果 Queue，解耦Clearing、Account和Position逻辑。使用saga pattern就无需DLQ保存失败请求。无论请求成功或者失败都可以继续处理下一个消息。cap服务处理流程都是消费消息 -> 单一逻辑处理 -> 发送消息，服务流程简单健壮，也便于快速消费消息，不堵塞。          
     账户处理：clearing ->queue<- account；开仓处理：clearing ->queue<- account ->queue<- position；平仓处理：clearing ->queue<- position ->queue<- account     
     业务上，如果开仓，account失败（如果是更新科目完成后，存在失败情况，则需发送account补偿消息，不要立即执行account补偿操作，所有账务处理无论是正常执行还是补偿都应在queue保存，便于重启继续执行），直接发送失败通知消息给上游，后续不发送position消息，不影响账务准确性，用户可以继续继续下单；position失败发送account补偿消息，账户额度先前被扣减，但没有持仓，用户可能因为余额不足，短暂不能再次下单，不影响账务准确性，后续额度恢复可继续下单。如果平仓，position失败（如果修改持仓状态后存在失败情况，则继续发送account消息），直接发送失败通知消息给上游，后续不发送account消息，不影响账务准确性，持仓仍然存在。如果是账务类处理，只需调用account，如果失败直接发送失败通知消息给上游。account（单一账务处理或平仓）或position（开仓）为最末端业务处理节点时，处理完后需要发送成功消息给上游。    
 22、玩法不用同步获取clearing处理的结果，后续账务结果可以通过资金流水查询，持仓结果可以通过持仓列表查询，通过消息获取业务执行结果。  

@@ -1,4 +1,4 @@
-1、clearing/account/position使用queue通讯，按顺序处理请求。基于event-source。  
+1、clearing/account/position使用queue通讯，按顺序处理请求。基于event-source。配合定时任务服务和RTC服务，组成完成清结算域。     
 2、clearing不处理如果余额不足转负债场景，account处理。避免clearing需要查询两次account获取最新账户信息或者在clearing内存计算。一切以account计算为主。  
 3、clearing只负责金额对应科目的选择或者组合。  
 4、幂等，调用方传唯一标识结合发起时间，clearing缓存8分钟。SQS=5mins,clearing=8mins 超过8分钟的请求一律丢弃。(幂等主要处理因为框架或者其他非逻辑（例如用户在界面上连续点击下单）原因导致的重试)  

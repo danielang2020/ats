@@ -64,6 +64,7 @@ position提供仓位更新服务
 1、科目变化（客户和商户各有20个科目）
 2、科目金额负数
 3、金额小数位
+4、射单爆仓期间
 
   
 ddd cut -> stateless（autoscaling） -> serverless（don't care）

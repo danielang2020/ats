@@ -178,3 +178,4 @@ used to be a trade system, but now is aws trade system.
 - when a new requirement is coming and discussion, first, backend dev provide interface, then tester develop mock interface according to interface, finally frontend develop web page according to mock server.  
 - Don't only use id to query a biz information, should work with user unique info or biz type info, such as an user id or a type id. (select * from biz where id = a and user_id = b and type_id = c;)
 - DDD not only limit the biz logic, but also its their own validation rule. Some passing parameters can trusted by another Domain.
+- Mysql can archive data with Event Scheduler and list partition.  

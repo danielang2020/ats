@@ -69,6 +69,7 @@ position提供仓位更新服务
 2、科目金额负数
 3、金额小数位
 4、射单爆仓期间
+5、单个持仓的冻结和担保品处理。 
 
   
 ddd cut -> stateless（autoscaling） -> serverless（don't care）

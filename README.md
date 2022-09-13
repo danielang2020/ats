@@ -180,3 +180,4 @@ used to be a trade system, but now is aws trade system.
 - DDD not only limit the biz logic, but also its their own validation rule. Some passing parameters can trusted by another Domain.
 - Mysql can archive data with Event Scheduler and list partition.  
 - order and deal work with TTL to prune, and position can delete closed status info directly after three months to prune.  
+- tick data receiver can be master-master pattern, data center should deduplicate every single tick.   

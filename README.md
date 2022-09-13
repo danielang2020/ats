@@ -176,7 +176,7 @@ used to be a trade system, but now is aws trade system.
 - frontend web app can be deployed in S3 web host.
 - something like market open time or settlement time, they should not provide admin function, just provide a json file in s3, because they don't update frequently.
 - when a new requirement is coming and discussion, first, backend dev provide interface, then tester develop mock interface according to interface, finally frontend develop web page according to mock server.  
-- Don't only use id to query a biz information, should work with user unique info or biz type info, such as an user id or a type id. (select * from biz where id = a and user_id = b and type_id = c;). avoiding Insecure direct object references .   
+- Don't only use id to query a biz information, should work with user unique info or biz type info, such as an user id or a type id. (select * from biz where id = a and user_id = b and type_id = c;). avoiding Insecure direct object references. Query biz information can't be without biz condition.   
 - DDD not only limit the biz logic, but also its their own validation rule. Some passing parameters can trusted by another Domain.
 - Mysql can archive data with Event Scheduler and list partition.  
 - order and deal work with TTL to prune, and position can delete closed status info directly after three months to prune.  

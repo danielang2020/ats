@@ -185,3 +185,4 @@ used to be a trade system, but now is aws trade system.
 - there are two categories computation, one affects account currency(liquidation = volumn + parameter + tick), it should RTC; the other one is for show(net asset) and validation(withdrawable).      
 - liquidation only need position's volume info to compute, position symbol and position volumn should been indexed.   
 - data type in DB is important for RTC.   
+- The data about RTC uses numeric data type as possible as you can, improve CRUD.   

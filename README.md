@@ -182,4 +182,4 @@ used to be a trade system, but now is aws trade system.
 - order and deal work with TTL to prune, and position can delete closed status info directly after three months to prune.  
 - tick data receiver can be master-master pattern, data center should deduplicate every single tick. 
 - market focus on sending tick and provide multiple rate, e.g. real-time, 5 seconds etc. RTC service always receive real-time tick data and compute, if there are so many tick data coming and rtc could not compute ASAP, rtc can accumulate tick data to form a candlestick in memory that can be used by next round.    
-- there are two categories computation, one affects account currency, it should RTC; the other one is for show and validation.  
+- there are two categories computation, one affects account currency(liquidation), it should RTC; the other one is for show(net asset) and validation(withdrawable).      

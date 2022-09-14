@@ -186,3 +186,4 @@ used to be a trade system, but now is aws trade system.
 - liquidation only need position's volume info to compute, position symbol and position volumn should been indexed.   
 - data type in DB is important for RTC.   
 - The data about RTC uses numeric data type as possible as you can, improve CRUD.   
+- programming use numeric data to be connected, string data is for human being to read.   

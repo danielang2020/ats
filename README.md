@@ -187,3 +187,4 @@ used to be a trade system, but now is aws trade system.
 - data type in DB is important for RTC.   
 - The data about RTC uses numeric data type as possible as you can, improve CRUD.   
 - programming use numeric data to be connected, string data is for human being to read.   
+- websocket is top level communication method that used in market tick info. Other user info(net asset etc.) could be implemented by interval request.   

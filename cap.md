@@ -104,4 +104,5 @@ SQS
 21、The result of sending each message is reported individually in the response. Because the batch request can result in a combination of successful and unsuccessful actions, you should check for batch errors even when the call returns an HTTP status code of 200.   
 22、 you should make sure that your queue isn't publicly accessible (accessible by everyone in the world or by any authenticated AWS user).   
 23、1,000 queues per ListQueues request.   
+24、For optimal performance, set the visibility timeout to be larger than the AWS SDK read timeout. This applies to using the ReceiveMessage API action with either short polling or long polling.
 

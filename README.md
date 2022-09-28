@@ -188,4 +188,4 @@ used to be a trade system, but now is aws trade system.
 - The data about RTC uses numeric data type as possible as you can, improve CRUD.   
 - programming use numeric data to be connected, string data is for human being to read.   
 - websocket is top level communication method that used in market tick info. Other user info(net asset etc.) could be implemented by interval request.   
-- Don't use auto-increment id as primary key and don't use this kind of primary key as api parameters. instead use uuid(v4) as primary key and use biz information to query unique user or account information.(email + account_type = account_id).  Sequence id can be attacked brutually.   
+- Don't use auto-increment id as primary key and don't use this kind of primary key as api parameters. instead use uuid(v4) as primary key and use biz information to query unique user or account information.(email + account_type = account_id).  Sequence id can be attacked brutually and have sql injectiont.    

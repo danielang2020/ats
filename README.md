@@ -192,3 +192,4 @@ used to be a trade system, but now is aws trade system.
 - apikey should work with account perspective(玩法）.  if you use customer info to log in system, customer key + account_type = account key.    
 - testcase not only check application which if it is ok, but also give scenario examples to other developers.
 - if a biz has serveral action to complete, every action should guarantee sequence and previous's action valid. e.g. second action should validate request parameter is first action.  
+- automatically creating telegram account to p2p information and share link, if user has interest, they will join by share link.  Don't risk group or channel by mass adding user using api, otherwise, your group will be flagged spam and limited.  

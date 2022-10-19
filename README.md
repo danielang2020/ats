@@ -6,6 +6,7 @@ used to be a trade system, but now is aws trade system.
 - instead of pushing, could use pull mode to calculate position in RTC.
 - the api return exactly what error is to frontend, i18n should be done with cdn resource file. enum type info should use common english expression.
 - all data info don't contain language field, expression common info. i18n should be done in front end.
+- frontend i18n must set text max length to avoid pages mismatch regardless of languages.
 - decouple frontend api and backend api
 - update config parameter notify by MQ, and then serverless update distributed cache
 - serverless provider api in the front of distributed cache

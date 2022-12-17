@@ -110,7 +110,7 @@ used to be a trade system, but now is aws trade system.
 - if some data in some microservices need be consistent, should have data redundancy in the final data store. e.g. captial flow and total with captial flow no.
 - scaling out with throttling, don't blindly scale out. scaling out by real time peak request or peak scheduled time.
 - backend service should use optimistic lock to update data. avoiding overwrite.
-- every external requests work with timeout setting(connect timeout/read timeout).
+- every external requests work with timeout setting(connect timeout/read timeout), including database query timeout.
 - strong consistency in cats is unnecessary. eventual consistency is enough. substract user balance and then open a new position, close a position and then add user balance. deposit money and then add user balance, substrct balance and then withdraw money. use command message to notify clearing service.
 - every microservice communicates with each other by protobuf.
 - client ui have some place to store error/exception info. in order to give dev to solve the problem.

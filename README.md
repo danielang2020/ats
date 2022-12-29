@@ -198,3 +198,4 @@ used to be a trade system, but now is aws trade system.
 - web information should not be encrypted to send to server, if using HTTPS.
 - message notification use long polling instead of websocket. messages just are processing info, not result, don't require real-time. we can also distinguish between user that has positions and user that hasn't positions to set different interval time to long polling. websocket is high-level resource to be used.
 - don't need biz customerNo, only email or phone is ok to identify a customer. 
+- mysql table partition don't depend on time field, because if id + time is primary key, then data can be duplicated sometimes.

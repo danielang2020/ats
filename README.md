@@ -59,7 +59,7 @@ used to be a trade system, but now is aws trade system.
 - elasticbeanstalk can provide back end management system.
 - low code work with back end management system.
 - ios/android/web have Event Tracking.
-- every biz client(web/app) request should have a idempotent-request-id in order to retry. idempotent-request-id can be stored in cache with expiration. expiration work with time, for example if a request-id will be expired in a day, then yesterday request-id should be blocked no matter what it is.
+- every biz client(web/app) request should have a idempotent-request-id in order to retry. idempotent-request-id can be stored in cache with expiration. expiration work with time, for example if a request-id will be expired in a day, then yesterday request-id should be blocked no matter what it is. idempotent mainly prevent concurrently action, if cache expire, service should check if duplicate by request-id.
 - every dependent middleware should be config by container evn, don't config by config file.
 - MQ will have two kinds of message, orginal message and common biz message.
 - seperate payment/withdraw module from core biz. dependently deploy payment/withdraw service.

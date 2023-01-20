@@ -200,4 +200,4 @@ used to be a trade system, but now is aws trade system.
 - don't need biz customerNo, only email or phone is ok to identify a customer. 
 - mysql table partition don't depend on time field, because if id + time is primary key, then data can be duplicated sometimes.
 - retry prevents tech problems(e.g. innodb row lock) and idempotent prevents biz problems in transient errors.
-- order/deal/position don't have concurrent issues in add section(weak transaction level), maybe have in update section.  
+- order/deal/position don't have concurrent issues in add section(weak transaction level), maybe have in update section if allow multiple logins.  

@@ -199,4 +199,4 @@ used to be a trade system, but now is aws trade system.
 - message notification use long polling instead of websocket. messages just are processing info, not result, don't require real-time. we can also distinguish between user that has positions and user that hasn't positions to set different interval time to long polling. websocket is high-level resource to be used.
 - don't need biz customerNo, only email or phone is ok to identify a customer. 
 - mysql table partition don't depend on time field, because if id + time is primary key, then data can be duplicated sometimes.
-- retry prevents tech problems and idempotent prevents biz problems in transient errors.
+- retry prevents tech problems(e.g. innodb row lock) and idempotent prevents biz problems in transient errors.

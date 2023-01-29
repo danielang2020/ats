@@ -202,3 +202,4 @@ used to be a trade system, but now is aws trade system.
 - retry prevents tech problems(e.g. innodb row lock) and idempotent prevents biz problems in transient errors.
 - order/deal/position don't have concurrent issues in add section(weak transaction level), maybe have in update section if allow multiple logins. 
 - HPC need store configuration data in RAM, not biz data. When a node fails, it's convenient to reboot just with configuration data without biz data loss. 
+- order/deal are processed by event bus.

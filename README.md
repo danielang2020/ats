@@ -203,3 +203,4 @@ used to be a trade system, but now is aws trade system.
 - order/deal/position don't have concurrent issues in add section(weak transaction level), maybe have in update section if allow multiple logins. 
 - HPC need store configuration data in RAM, not biz data. When a node fails, it's convenient to reboot just with configuration data without biz data loss. 
 - order/deal are processed by event bus.
+- Cost-effective means that service can be auto-scaling and pay-as-you-go(including reserved plan)

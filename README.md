@@ -204,4 +204,4 @@ used to be a trade system, but now is aws trade system.
 - HPC need store configuration data in RAM, not biz data. When a node fails, it's convenient to reboot just with configuration data without biz data loss. 
 - order/deal are processed by event bus.
 - Cost-effective means that service can be auto-scaling and pay-as-you-go(including reserved plan)
-- if query and then do, don't depend on read-only replicate query in order to avoid linearizability.
+- if query and then do, don't depend on read-only replicas query in order to avoid linearizability.

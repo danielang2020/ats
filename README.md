@@ -206,4 +206,4 @@ used to be a trade system, but now is aws trade system.
 - Cost-effective means that service can be auto-scaling and pay-as-you-go(including reserved plan)
 - if query and then do, don't depend on read-only replicas query in order to avoid linearizability.
 - Partition data is important for HPC.
-- if computation has rounding or zero, should throw exception.
+- if division includes rounding or result is zero, computation should throw exception.

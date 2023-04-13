@@ -195,7 +195,7 @@ used to be a trade system, but now is aws trade system.
 - if a biz has serveral action to complete, every action should guarantee sequence and previous's action valid. e.g. second action should validate request parameter is first action.  
 - automatically creating telegram account to p2p information and share link, if user has interest, they will join by share link.  Don't risk group or channel by mass adding user using api, otherwise, your group will be flagged spam and limited.  
 - using third party tool lib, should put them in a util class. it's convenient to upgrade version in the future.
-- web information should not be encrypted to send to server, if using HTTPS.
+- http request parameters should not be encrypted to send to server, if using HTTPS.
 - message notification use long polling instead of websocket. messages just are processing info, not result, don't require real-time. we can also distinguish between user that has positions and user that hasn't positions to set different interval time to long polling. websocket is high-level resource to be used.
 - don't need biz customerNo, only email or phone is ok to identify a customer. 
 - mysql table partition don't depend on time field, because if id + time is primary key, then data can be duplicated sometimes.

@@ -207,3 +207,5 @@ used to be a trade system, but now is aws trade system.
 - if query and then do, don't depend on read-only replicas query in order to avoid linearizability.
 - Partition data evenly is important for HPC.
 - if division includes rounding and result is zero, computation should throw exception. the default result of a computation is null, not zero.
+- if messages are sent frequently by websocket or tcp. messages should be compressed using pb or other algorithm.
+- production relational database executes ddl carefully , lock table.

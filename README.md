@@ -210,3 +210,4 @@ used to be a trade system, but now is aws trade system.
 - if messages are sent frequently by websocket or tcp. messages should be compressed using pb or other algorithm.
 - production relational database executes ddl carefully , lock table.
 - distrbiuted lock = FIFO MQ
+- core biz DB should be isolated from other biz. use data pipeline syn to other DB for using. 

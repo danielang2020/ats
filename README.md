@@ -210,4 +210,10 @@ used to be a trade system, but now is aws trade system.
 - if messages are sent frequently by websocket or tcp. messages should be compressed using pb or other algorithm.
 - production relational database executes ddl carefully , lock table.
 - distrbiuted lock = FIFO MQ
-- core biz DB should be isolated from other biz. use data pipeline syn to other DB for using. 
+- core biz DB should be isolated from other biz. use data pipeline syn to other DB for using.
+- 盘口分为三种层级：L1推送最优买卖一档价格、L2推送所有档位价格及合并数量、L3推送所有档位价格及所有挂单数量
+>> 如果希望性能保证的前提下，实时推送，只能选择L2.
+>> Orderbook按照L2推送，控制了每档明细的信息。横向控制。
+>> 下单时要控制挂单价格与最优档位距离，控制了档数。先前所说的设置挂单超时时间，也阻止不了大量恶意挂单。纵向控制。
+>> 如果希望前端按照做市商进行深度划分，可以直接拿到L2的总深度盘口，根据已有做市商摆盘配置，前端自行划分。
+>> 最后结合tcp + pb的压缩传输方式。

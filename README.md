@@ -220,3 +220,4 @@ used to be a trade system, but now is aws trade system.
 - 关于浮动盈亏，分为两种场景：
 >>1. 根据实时行情计算爆仓，需要根据每一个报价来计算当前持仓是否爆仓，每次计算爆仓时，保存当前计算的价格。如果下一个行价格推送时，ask持仓，判断保持的价格 < 新推送的价格，则忽略此行情；bid持仓，判断保存的价格 > 新推送的价格，则忽略此行情。此计算要求实时高，且需要动态扩展工作节点。
 >>2. 前端用户界面展示盈亏，需要根据每一个报价来计算当前用户持仓的盈亏，无需实时计算，前端定频计算展示，供用户参考。
+- About match engine order book backup, If want to have high performance, need two match engines, one accepts the user's order and backup every order command, and the other one only receives the first back up order command and process it to form a orderbook, periodly backup whole orderbook that is used by first one.
